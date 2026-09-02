@@ -1,13 +1,15 @@
 const prompt = require('prompt-sync')();
 
-const a = Number(prompt('Entrez le premier nombre :'));
-const b = Number(prompt('Entrez le deuxième nombre :'));
-console.log('a + b =', a + b);
-console.log('a - b =', a - b);
-console.log('a * b =', a * b);
+const premierNombre = Number(prompt('Entrez le premier nombre :'));
+const deuxiemeNombre = Number(prompt('Entrez le deuxième nombre :'));
 
-if (b !== 0) {
-  console.log('a / b =', a / b);
+console.log('Addition :', premierNombre + deuxiemeNombre);
+console.log('Soustraction :', premierNombre - deuxiemeNombre);
+console.log('Multiplication :', premierNombre * deuxiemeNombre);
+
+// On ne peut pas diviser par zéro.
+if (deuxiemeNombre !== 0) {
+  console.log('Division :', premierNombre / deuxiemeNombre);
 } else {
   console.log('Division impossible');
 }
