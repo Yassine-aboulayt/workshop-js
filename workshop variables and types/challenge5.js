@@ -1,6 +1,6 @@
-const prompt = require('prompt-sync')();
+let prompt = require('prompt-sync')();
 
-const temperature = Number(prompt('Entrez la température en Celsius :'));
+let temperature = Number(prompt('Entrez la température en Celsius :'));
 
 // L'eau est solide sous 0 °C, liquide avant 100 °C, puis gazeuse.
 if (temperature < 0) {

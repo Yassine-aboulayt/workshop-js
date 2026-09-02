@@ -1,7 +1,7 @@
-const prompt = require('prompt-sync')();
+let prompt = require('prompt-sync')();
 
-const premierNombre = Number(prompt('Entrez le premier nombre :'));
-const deuxiemeNombre = Number(prompt('Entrez le deuxième nombre :'));
+let premierNombre = Number(prompt('Entrez le premier nombre :'));
+let deuxiemeNombre = Number(prompt('Entrez le deuxième nombre :'));
 
 console.log('Addition :', premierNombre + deuxiemeNombre);
 console.log('Soustraction :', premierNombre - deuxiemeNombre);
