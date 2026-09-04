@@ -1,6 +1,6 @@
 let prompt = require('prompt-sync')();
 
-let annee = Number(prompt('Entrez un nombre d\'années : '));
+let annee = Number(prompt('Entrez un nombre d années : '));
 let choix = prompt('Choisissez la conversion (mois, jours, heures, minutes, secondes) : ').toLowerCase();
 
 switch (choix) {
